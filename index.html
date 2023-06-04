@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>Méthode Agile SCRUM</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid navbar">
+            <a class="navbar-brand" href="index.html">SCRUM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Jour 1
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="nav-link" href="#origines">Origines de SCRUM</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#principes">Principes de base de SCRUM</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#pilliers">Les trois piliers de SCRUM</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#roles">Les rôles dans SCRUM</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#artefacts">Les artefacts de SCRUM</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#evenements">Les événements SCRUM</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#collaboration">L'importance de la collaboration</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Jour 2
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="nav-link" href="#product_backlog">Raffinement du Product Backlog</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#planification">Planification du sprint</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#sprint">Réalisation du sprint</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#revue">Revue de sprint et rétrospective</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#obstacles">Gestion des obstacles</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#echelle">SCRUM à l'échelle</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-French.pdf"
+                            target="_blank">Guide</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main">
+        <div class="img-container">
+            <img src="./asset/img/scrum__intro.png" alt="image de la méthodologie scrum">
+        </div>
+        <div class="container" id="introduction">
+            <h2 class="my-5">Introduction</h2>
+            <div class="objectifs">
+                <ul>
+                    <li><b>Objectif du cours</b> : Comprendre les principes et la mise en application de la méthode
+                        SCRUM.</li>
+                    <li><b>Aperçu de la méthode SCRUM</b> : Introduction aux concepts clés et à la structure de SCRUM.
+                    </li>
+                    <li><b>Avantages de l'adoption de SCRUM</b> : Exploration des bénéfices de l'utilisation de SCRUM
+                        par
+                        rapport
+                        aux méthodes traditionnelles de développement.</li>
+                </ul>
+            </div>
+            <p>Bonjour à tous et bienvenue dans ce cours sur la méthode agile SCRUM. Au cours des deux prochains jours,
+                nous allons plonger dans les origines, le fonctionnement et la mise en application de SCRUM. Nous allons
+                également aborder des exercices pratiques pour vous permettre de mettre en pratique les principes de
+                SCRUM. Commençons par une introduction à SCRUM.</p>
+
+            <p>SCRUM est une méthode de développement de logiciels agile qui permet de gérer les projets de manière
+                itérative et collaborative. Il favorise la transparence, l'adaptation et la livraison régulière de
+                fonctionnalités. Les principes de SCRUM ont émergé en réponse aux limites des méthodes traditionnelles
+                de développement.</p>
+
+            <div class="exos">
+
+                <p><a href="https://manifesteagile.fr/">Le Manifeste Agile</a>, publié en 2001, a posé les bases de
+                    l'agilité en mettant l'accent sur des valeurs
+                    telles que la collaboration, la réactivité au changement et la satisfaction du client. SCRUM est né
+                    dans
+                    ce contexte et a depuis gagné en popularité grâce à sa simplicité et à son efficacité.</p>
+            </div>
+        </div>
+        <div class="container" id="origines">
+            <h2 class="my-5">Origines de SCRUM</h2>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Développement traditionnel vs méthodes agiles</b> : Comparaison des approches classiques de
+                        développement et des méthodes agiles.</li>
+                    <li><b>Manifeste Agile et valeurs fondamentales</b> : Présentation des principes fondamentaux de
+                        l'agilité
+                        selon le Manifeste Agile.</li>
+                    <li><b>Naissance de SCRUM</b> : Contexte et histoire de l'émergence de la méthode SCRUM.</li>
+                </ul>
+            </div>
+            <p>Pour comprendre pourquoi SCRUM est si différent des approches traditionnelles, examinons d'abord les
+                limites de ces dernières. Les méthodes traditionnelles, telles que le modèle en cascade, sont linéaires
+                et prédictives, avec une planification détaillée à l'avance. Cela peut entraîner une rigidité face aux
+                changements et un manque d'adaptabilité aux besoins changeants du projet.</p>
+            <p>Le Manifeste Agile a été rédigé par un groupe de développeurs qui cherchaient à rompre avec cette
+                rigidité. Il met l'accent sur quatre valeurs clés : les individus et leurs interactions, les logiciels
+                opérationnels, la collaboration avec les clients et la réponse au changement. Ces valeurs ont jeté les
+                bases de l'agilité et ont inspiré le développement de SCRUM.</p>
+            <div class="exos">
+
+                <p>
+                    SCRUM a été introduit pour la première fois par Jeff Sutherland et Ken Schwaber dans les années
+                    1990. Il
+                    s'inspire des principes agiles du Manifeste et vise à fournir une méthode de gestion de projet plus
+                    souple et adaptable. Depuis lors, SCRUM a été largement adopté dans l'industrie du développement
+                    logiciel et au-delà.</p>
+            </div>
+        </div>
+        <div class="container" id="principes">
+            <h2 class="my-5">Principes de base de SCRUM</h2>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Itératif et Incrémental</b> : Explication des cycles itératifs et incrémentaux de SCRUM.</li>
+                    <li><b>Transparence</b> : Comprendre l'importance de la transparence dans SCRUM et comment elle est
+                        favorisée.
+                    </li>
+                    <li><b>Adaptation</b> : Principe d'adaptation continue et d'amélioration dans SCRUM.</li>
+                    <li>Rôles et responsabilités : Présentation des différents rôles clés dans SCRUM et de leurs
+                        responsabilités
+                        respectives.</li>
+                </ul>
+            </div>
+            <p>SCRUM se distingue par ses principes de base : l'itération, l'incrémentalité, la transparence,
+                l'adaptation et les rôles définis. Tout d'abord, SCRUM adopte une approche itérative, découpant le
+                projet en itérations appelées
+                "sprints". Chaque sprint est un cycle court et délimité dans lequel une partie du travail est accomplie.
+            </p>
+            <p>L'incrémentalité signifie que chaque sprint produit un incrément du produit final, une version
+                fonctionnelle
+                qui
+                peut être potentiellement livrée au client. Cela permet d'obtenir rapidement des retours et de s'adapter
+                aux
+                besoins changeants du projet.</p>
+            <p>La transparence est un principe clé dans SCRUM. Tous les aspects du projet, y compris le travail
+                accompli,
+                les
+                obstacles rencontrés et les prévisions, doivent être visibles et accessibles à tous les membres de
+                l'équipe.
+                Cela favorise la confiance, la collaboration et la prise de décision éclairée.</p>
+            <p>L'adaptation continue est encouragée dans SCRUM. L'équipe évalue régulièrement son travail et s'adapte en
+                conséquence. Cela se fait à travers les événements SCRUM, tels que la réunion quotidienne de
+                synchronisation
+                appelée "Daily Scrum" et la rétrospective du sprint.</p>
+            <p>Les rôles clés dans SCRUM comprennent le Product Owner, le Scrum Master et l'Équipe de développement. Le
+                Product
+                Owner est responsable de la gestion du Product Backlog et de la définition des priorités. Le Scrum
+                Master
+                est le
+                facilitateur de l'équipe SCRUM, garantissant l'application correcte de SCRUM. L'Équipe de développement
+                est
+                responsable de la réalisation du travail et de la livraison de l'incrément.</p>
+            <div class="exos">
+
+                <p>Ces principes de base constituent le fondement de SCRUM et nous les approfondirons tout au long du
+                    cours.
+                </p>
+            </div>
+        </div>
+        <div class="container" id="pilliers">
+            <h2 class="my-5">Les trois piliers de SCRUM</h2>
+            <div class="img-container">
+                <img src="./asset/img/pilliers_scrum.jpeg" alt="image des 3 pilliers SCRUM">
+            </div>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Transparence</b> : Explication de la transparence en tant que pilier fondamental de SCRUM et
+                        de ses
+                        implications.</li>
+                    <li><b>Inspection</b> : Comprendre le rôle de l'inspection régulière dans SCRUM pour garantir la
+                        qualité et
+                        l'adaptation.</li>
+                    <li><b>Adaptation</b> : Expliquer comment l'adaptation est facilitée par l'inspection et la
+                        transparence
+                        dans
+                        SCRUM.</li>
+                </ul>
+            </div>
+            <p>SCRUM repose sur trois piliers fondamentaux : la transparence, l'inspection et l'adaptation. La
+                transparence
+                signifie que toutes les informations pertinentes sur le projet sont visibles et partagées avec les
+                membres
+                de
+                l'équipe. Cela comprend la communication des progrès, des obstacles et des problèmes.</p>
+            <p>L'inspection est une activité régulière dans SCRUM. L'équipe SCRUM examine continuellement le travail
+                accompli
+                pour s'assurer de sa qualité et de sa conformité aux attentes. Cela permet d'identifier rapidement les
+                problèmes
+                et les défauts, ce qui facilite leur correction.</p>
+            <p>L'adaptation découle de l'inspection et de la transparence. Lorsqu'une inspection révèle des problèmes ou
+                des
+                écarts par rapport aux attentes, l'équipe SCRUM peut ajuster son plan et prendre des mesures
+                correctives.
+                Cela
+                permet une adaptation continue et une amélioration incrémentale du produit.</p>
+            <div class="exos">
+
+                <p>Ces trois piliers sont interconnectés et se renforcent mutuellement pour permettre à SCRUM d'être
+                    flexible,
+                    réactif et orienté vers la valeur.</p>
+            </div>
+        </div>
+        <div class="container" id="roles">
+            <h2 class="my-5">Les rôles dans SCRUM</h2>
+            <div class="img-container">
+                <img src="./asset/img/scrum__roles.png" alt="image des roles de SCRUM">
+            </div>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Product Owner</b> : Explication du rôle du Product Owner dans SCRUM, y compris ses
+                        responsabilités
+                        et
+                        ses
+                        interactions.</li>
+                    <li><b>Scrum Master</b> : Compréhension du rôle du Scrum Master en tant que facilitateur de l'équipe
+                        SCRUM
+                        et
+                        de ses
+                        tâches
+                        clés.</li>
+                    <li><b>Équipe de développement</b> : Présentation du rôle de l'Équipe de développement, y compris
+                        ses
+                        compétences et
+                        son autonomie.</li>
+                </ul>
+            </div>
+            <p>SCRUM définit des rôles clés pour assurer le bon fonctionnement de l'équipe SCRUM. Le Product Owner est
+                responsable de représenter les intérêts du client et de gérer le Product Backlog. Il définit les
+                exigences,
+                établit les priorités et valide les livraisons.</p>
+            <p>Le Scrum Master est le facilitateur de l'équipe SCRUM. Il veille à ce que SCRUM soit correctement compris
+                et
+                appliqué. Le Scrum Master aide l'équipe à résoudre les obstacles, facilite les événements SCRUM et
+                favorise
+                une
+                culture de collaboration et d'amélioration continue.</p>
+            <p>L'Équipe de développement est responsable de la réalisation du travail. Elle est pluridisciplinaire et
+                autonome,
+                capable de s'organiser et de prendre des décisions pour atteindre les objectifs du sprint. L'équipe
+                collabore
+                étroitement avec le Product Owner pour comprendre les exigences et avec le Scrum Master pour maintenir
+                la
+                discipline SCRUM.</p>
+            <div class="exos">
+
+                <p>Ces rôles travaillent ensemble de manière collaborative pour assurer le succès du projet et la
+                    réalisation
+                    des
+                    objectifs.</p>
+            </div>
+        </div>
+        <div class="container" id="artefacts">
+            <h2 class="my-5">Les artefacts de SCRUM</h2>
+            <div class="img-container">
+                <img src="./asset/img/artefacts__scrum.jpg" alt="les artefacts de SCRUM">
+            </div>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Product Backlog</b> : Explication du Product Backlog comme une liste ordonnée de tous les
+                        éléments
+                        de
+                        travail à
+                        réaliser.</li>
+                    <li><b>Sprint Backlog</b> : Compréhension du Sprint Backlog comme l'ensemble des éléments du Product
+                        Backlog
+                        sélectionnés
+                        pour le sprint en cours.</li>
+                    <li><b>Incrément</b> : Définition de l'incrément comme le résultat du travail réalisé pendant le
+                        sprint,
+                        potentiellement
+                        livrable au client.</li>
+                </ul>
+            </div>
+            <p>SCRUM utilise des artefacts spécifiques pour organiser et suivre le travail. Le Product Backlog est une
+                liste
+                ordonnée de toutes les fonctionnalités, les corrections de bugs, les améliorations et les tâches à
+                réaliser.
+                Il
+                est maintenu par le Product Owner et est continuellement raffiné et priorisé.</p>
+            <p>Le Sprint Backlog est l'ensemble des éléments du Product Backlog sélectionnés pour le sprint en cours. Il
+                est
+                défini par l'Équipe de développement lors de la planification du sprint. Le Sprint Backlog est dynamique
+                et
+                peut
+                être ajusté en fonction de l'évolution des circonstances.</p>
+            <p>L'incrément est le résultat du travail accompli pendant le sprint. C'est une version fonctionnelle du
+                produit
+                qui peut potentiellement être livrée au client. L'incrément doit être testé, intégré et prêt à être
+                utilisé.</p>
+            <div class="exos">
+
+                <p>Ces artefacts aident à structurer le travail et à fournir une vision claire de ce qui doit être
+                    réalisé
+                    et
+                    livré
+                    à chaque étape du projet.</p>
+            </div>
+        </div>
+        <div class="container" id="evenements">
+            <h2 class="my-5">Les événements SCRUM</h2>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Planification du sprint</b> : Explication de la réunion de planification du sprint, y compris
+                        ses
+                        objectifs et
+                        les
+                        activités qui s'y déroulent.</li>
+                    <li><b>Daily Scrum</b> : Compréhension de la réunion quotidienne de synchronisation, y compris son
+                        objectif
+                        et
+                        les
+                        questions habituelles posées.</li>
+                    <li><b>Revue de sprint</b> : Présentation de la réunion de revue de sprint, où l'incrément est
+                        présenté et
+                        les
+                        commentaires
+                        sont recueillis.</li>
+                </ul>
+            </div>
+            <p>SCRUM utilise des événements spécifiques pour faciliter la collaboration, l'adaptation et la prise de
+                décision.
+                La réunion de planification du sprint marque le début de chaque sprint. L'équipe SCRUM se réunit pour
+                sélectionner les éléments du Product Backlog qui seront réalisés lors du sprint et pour estimer la
+                quantité
+                de
+                travail.</p>
+            <p>Le Daily Scrum est une réunion quotidienne de synchronisation de l'équipe SCRUM. Elle a lieu tous les
+                jours
+                pendant le sprint et permet aux membres de l'équipe de partager leurs progrès, de discuter des obstacles
+                et
+                de
+                se coordonner pour atteindre les objectifs.</p>
+            <p>La revue de sprint a lieu à la fin de chaque sprint. L'équipe SCRUM présente l'incrément réalisé et
+                recueille
+                les commentaires et les suggestions des parties prenantes. C'est l'occasion de valider les
+                fonctionnalités
+                et de
+                recueillir des informations pour l'amélioration continue.</p>
+            <div class="exos">
+
+                <p>Ces événements structurés permettent à l'équipe SCRUM de se synchroniser, d'inspecter le travail
+                    accompli
+                    et
+                    d'adapter ses plans pour maximiser la valeur livrée.</p>
+            </div>
+        </div>
+        <div class="container" id="collaboration">
+            <h2 class="my-5">L'importance de la collaboration</h2>
+            <div class="img-container">
+                <img src="./asset/img/collaboration__scrum.jpg" alt="importance de la collaboration dans SCRUM">
+            </div>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Collaboration interdisciplinaire</b> : Explication de l'importance de la collaboration
+                        étroite entre
+                        les
+                        membres
+                        de
+                        l'équipe SCRUM.</li>
+                    <li><b>Collaboration avec le Product Owner</b> : Compréhension de la relation collaborative entre
+                        l'équipe
+                        de
+                        développement
+                        et le Product Owner.</li>
+                    <li><b>Collaboration avec les parties prenantes</b> : Présentation de l'engagement des parties
+                        prenantes et
+                        de
+                        l'importance
+                        de leur contribution à travers la collaboration.</li>
+                </ul>
+            </div>
+            <p>La collaboration est au cœur de SCRUM. Une collaboration étroite entre les membres de l'équipe SCRUM
+                favorise la
+                communication, le partage des connaissances et la résolution rapide des problèmes. Cela permet de
+                réaliser
+                un
+                travail de qualité et d'atteindre les objectifs du projet.</p>
+            <p>La collaboration avec le Product Owner est essentielle pour clarifier les exigences, établir les
+                priorités
+                et
+                valider les livraisons. L'équipe de développement doit travailler en étroite collaboration avec le
+                Product
+                Owner
+                pour comprendre les besoins du client et fournir des solutions adaptées.</p>
+            <p>La collaboration avec les parties prenantes externes est également cruciale. Les parties prenantes
+                doivent
+                être
+                impliquées activement et leur feedback doit être pris en compte tout au long du projet. La collaboration
+                avec
+                les parties prenantes permet de valider les choix, d'ajuster les exigences et de garantir que le produit
+                final
+                répondra aux attentes.</p>
+            <div class="exos">
+
+                <p>La collaboration est un élément clé de la réussite de SCRUM et favorise une approche collective et
+                    orientée
+                    vers
+                    la valeur.</p>
+            </div>
+        </div>
+        <div class="container" id="product_backlog">
+            <h2 class="my-5">Raffinement du Product Backlog</h2>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Définition</b> du raffinement du Product Backlog et de son objectif.</li>
+                    <li><b>Activités de raffinement</b> : Explication des différentes activités de raffinement, telles
+                        que
+                        l'analyse,
+                        l'estimation et la priorisation des éléments du Product Backlog.</li>
+                </ul>
+            </div>
+            <p>Le raffinement du Product Backlog est un processus continu qui vise à clarifier et à préparer les
+                éléments
+                du
+                Product Backlog pour les sprints futurs. L'objectif est de rendre les éléments du backlog suffisamment
+                compréhensibles et estimables par l'équipe de développement.</p>
+            <p>Les activités de raffinement comprennent l'analyse approfondie des éléments du Product Backlog,
+                l'estimation
+                de
+                leur taille et de leur complexité, ainsi que la priorisation en fonction de la valeur et des besoins du
+                client.
+                Le raffinement permet de préparer les éléments du backlog pour la planification du sprint.</p>
+        </div>
+        <div class="container" id="planification">
+            <h2 class="my-5"> Planification du sprint</h2>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Planification du sprint</b> : Rappel de la réunion de planification du sprint et de ses
+                        objectifs.
+                    </li>
+                    <li><b>Sélection des éléments du Product Backlog</b> : Explication du processus de sélection des
+                        éléments à
+                        inclure
+                        dans le
+                        Sprint Backlog.</li>
+                    <li><b>Estimation du travail</b> : Méthodes d'estimation du travail à réaliser pendant le sprint.
+                    </li>
+                </ul>
+            </div>
+            <p>La planification du sprint est une réunion clé qui marque le début de chaque sprint. L'équipe SCRUM se
+                réunit
+                pour sélectionner les éléments du Product Backlog à inclure dans le Sprint Backlog, en tenant compte des
+                priorités et des capacités de l'équipe.</p>
+            <p>Lors de la réunion de planification du sprint, l'équipe SCRUM est chargée de sélectionner les éléments du
+                Product Backlog qui seront inclus dans le Sprint Backlog. La sélection des éléments appropriés est
+                essentielle pour s'assurer que l'équipe se concentre sur les fonctionnalités les plus prioritaires et
+                les plus précieuses pour le client.</p>
+            <p>Voici les étapes générales du processus de sélection des éléments du Product Backlog :</p>
+            <ol>
+                <li>Revue du Product Backlog : L'équipe SCRUM examine l'ensemble du Product Backlog pour comprendre les
+                    fonctionnalités, les exigences et les priorités des différents éléments. Cela peut impliquer des
+                    discussions avec le Product Owner pour clarifier les éléments et leurs objectifs.</li>
+                <li>Évaluation des capacités de l'équipe : L'équipe évalue ses capacités et ses ressources disponibles
+                    pour le sprint. Cela comprend la compréhension des compétences techniques, du temps disponible et
+                    des contraintes potentielles.</li>
+                <li>Négociation avec le Product Owner : En collaboration avec le Product Owner, l'équipe SCRUM négocie
+                    les éléments qui seront inclus dans le Sprint Backlog. Cette étape implique une discussion sur les
+                    priorités, les dépendances et les attentes réalistes pour le sprint.</li>
+                <li>Découpage des éléments : Si certains éléments du Product Backlog sont trop volumineux pour être
+                    réalisés dans un seul sprint, l'équipe peut les découper en tâches plus petites et plus gérables.
+                    Cela permet de garantir une progression régulière et une livraison itérative des fonctionnalités.
+                </li>
+                <li>Définition des critères d'acceptation : Pour chaque élément sélectionné, l'équipe et le Product
+                    Owner définissent conjointement les critères d'acceptation qui déterminent quand un élément est
+                    considéré comme terminé. Cela aide à maintenir un niveau de qualité cohérent et à s'assurer que les
+                    attentes sont claires.</li>
+            </ol>
+            <p>L'objectif principal de la sélection des éléments du Product Backlog est de créer un Sprint Backlog
+                réalisable et aligné sur les objectifs du sprint. Cela permet à l'équipe de se concentrer sur un
+                ensemble de fonctionnalités claires et réalisables, favorisant ainsi la prévisibilité et la réussite du
+                sprint.</p>
+            <p>L'estimation du travail est une étape importante de la planification du sprint. L'équipe de développement
+                utilise différentes méthodes, telles que l'estimation en points d'histoire ou en heures, pour évaluer la
+                quantité de travail associée à chaque élément du Sprint Backlog.</p>
+        </div>
+        <div class="container" id="sprint">
+            <h2 class="my-5"> Réalisation du sprint</h2>
+            <div class="img-container">
+                <img src="./asset/img/sprint__scrum.png" alt="Réalisation du sprint SCRUM">
+            </div>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Rôles et responsabilités pendant le sprint</b> : Rappel des rôles de l'équipe de
+                        développement, du
+                        Scrum
+                        Master
+                        et
+                        du Product Owner pendant le sprint.</li>
+                    <li><b>Collaboration et communication</b> : Importance de la collaboration et de la communication
+                        continue
+                        entre les
+                        membres de l'équipe SCRUM pendant le sprint.</li>
+                    <li><b>Suivi de l'avancement</b> : Méthodes de suivi de l'avancement et de la réalisation des
+                        objectifs du
+                        sprint.</li>
+                </ul>
+            </div>
+            <p> Pendant le sprint, l'équipe SCRUM se concentre sur la réalisation du travail planifié. Chaque membre de
+                l'équipe
+                de développement assume des responsabilités spécifiques liées à ses compétences et à son domaine
+                d'expertise.</p>
+            <p>La collaboration et la communication continue sont essentielles pendant le sprint. L'équipe SCRUM se
+                réunit
+                quotidiennement lors du Daily Scrum pour partager les progrès, discuter des obstacles et s'assurer que
+                tout
+                le
+                monde est aligné sur les objectifs du sprint.</p>
+            <p>Le suivi de l'avancement est également important pour évaluer la réalisation des objectifs du sprint. Des
+                méthodes telles que les tableaux de bord visuels, les burndown charts ou les kanbans peuvent être
+                utilisées
+                pour
+                suivre le travail accompli et anticiper les ajustements nécessaires.</p>
+        </div>
+        <div class="container" id="revue">
+            <h2 class="my-5">Revue de sprint et rétrospective</h2>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Revue de sprint</b> : Rappel de la réunion de revue de sprint et de son objectif.</li>
+                    <li><b>Rétrospective</b> : Explication de la réunion de rétrospective et de son rôle dans
+                        l'amélioration
+                        continue.</li>
+                    <li><b>Actions d'amélioration</b> : Identification et planification des actions d'amélioration à
+                        mettre en
+                        place pour
+                        le
+                        prochain sprint.</li>
+                </ul>
+            </div>
+            <p>La revue de sprint est une réunion où l'équipe SCRUM présente l'incrément réalisé lors du sprint. Les
+                parties
+                prenantes ont l'opportunité de donner leur feedback, de poser des questions et de valider les
+                fonctionnalités
+                développées. C'est aussi l'occasion de discuter des leçons apprises et des ajustements nécessaires.</p>
+            <p>La rétrospective est une réunion dédiée à l'amélioration continue de l'équipe SCRUM. Les membres de
+                l'équipe
+                réfléchissent sur le sprint écoulé, identifient les points forts et les points à améliorer, et
+                définissent
+                des
+                actions spécifiques à mettre en œuvre pour le prochain sprint.</p>
+            <div class="exos">
+
+                <p>Ces deux événements, la revue de sprint et la rétrospective, permettent à l'équipe SCRUM de
+                    capitaliser
+                    sur
+                    les
+                    retours d'expérience et d'ajuster sa façon de travailler pour optimiser les résultats futurs.</p>
+            </div>
+        </div>
+        <div class="container" id="obstacles">
+            <h2 class="my-5"> Gestion des obstacles</h2>
+            <div class="img-container">
+                <img src="./asset/img/obsatcles__scrum.jpg" alt="photo illustrant des obstales dans SCRUM">
+            </div>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Identification des obstacles</b> : Méthodes pour identifier et documenter les obstacles qui
+                        entravent
+                        la
+                        progression
+                        du travail.</li>
+                    <li><b>Résolution des obstacles</b> : Approches pour résoudre les obstacles et garantir une
+                        progression
+                        fluide
+                        du
+                        projet.</li>
+                    <li><b>Suivi et communication</b> : Méthodes de suivi et de communication des obstacles résolus.
+                    </li>
+                </ul>
+            </div>
+            <p>La gestion des obstacles est cruciale pour assurer une progression fluide du travail. L'équipe SCRUM doit
+                être
+                proactive dans l'identification et la documentation des obstacles qui entravent le projet. Cela peut
+                inclure
+                des
+                problèmes techniques, des dépendances externes, des contraintes de ressources, etc.</p>
+            <p>La résolution des obstacles nécessite une approche collaborative. L'équipe SCRUM travaille ensemble pour
+                trouver
+                des solutions, en utilisant la transparence, l'adaptation et la collaboration avec les parties prenantes
+                concernées. Il est essentiel de documenter les actions prises pour résoudre les obstacles afin de
+                faciliter
+                le
+                suivi et la communication.</p>
+        </div>
+        <div class="container" id="echelle">
+            <h2 class="my-5"> SCRUM à l'échelle</h2>
+            <div class="objectifs">
+
+                <ul>
+                    <li><b>Frameworks d'échelle</b> : Présentation de différents frameworks d'échelle SCRUM, tels que
+                        SAFe,
+                        LeSS et
+                        Nexus.</li>
+                    <li><b>Coordination entre équipes</b> : Méthodes de coordination et de collaboration entre plusieurs
+                        équipes
+                        SCRUM
+                        travaillant sur un même projet.</li>
+                    <li><b>Gouvernance et alignement</b> : Rôle de la gouvernance et des mécanismes d'alignement pour
+                        garantir
+                        la
+                        cohérence
+                        et
+                        la coordination dans un contexte d'échelle.</li>
+                </ul>
+            </div>
+            <p>SCRUM à l'échelle concerne l'application de SCRUM dans des projets impliquant plusieurs équipes
+                travaillant
+                ensemble. Différents frameworks d'échelle, tels que SAFe, LeSS et Nexus, offrent des approches
+                structurées
+                pour
+                coordonner les activités des équipes, gérer les dépendances et maintenir la cohérence du projet.</p>
+            <p>La coordination entre les équipes SCRUM implique des réunions de synchronisation, des échanges de
+                représentants
+                et des mécanismes de gestion des dépendances. La gouvernance et les mécanismes d'alignement permettent
+                de
+                maintenir une vision globale du projet, d'harmoniser les pratiques et de garantir que les équipes
+                travaillent de
+                manière cohérente.</p>
+            <div class="exos">
+
+                <p>La mise en œuvre de SCRUM à l'échelle nécessite une compréhension approfondie des principes et des
+                    mécanismes de
+                    coordination pour assurer le succès du projet.</p>
+            </div>
+        </div>
+        <div class="container" id="conclusion">
+            <h2 class="my-5">Conclusion</h2>
+            <p>Ce cours a couvert les principes fondamentaux de SCRUM, en expliquant les concepts clés tels que les
+                valeurs,
+                les piliers, les rôles, les artefacts et les événements. Il a également abordé l'importance de la
+                collaboration,
+                la mise en pratique de SCRUM, la gestion des obstacles et l'application de SCRUM à l'échelle.
+            </p>
+            <p> SCRUM offre une approche agile et itérative pour gérer les projets, favorisant l'adaptation, la
+                transparence
+                et
+                la valeur ajoutée. En comprenant les principes et en appliquant les bonnes pratiques de SCRUM, les
+                équipes
+                peuvent améliorer leur efficacité, leur collaboration et leur capacité à fournir des produits de haute
+                qualité.</p>
+            <p>Il est essentiel de continuer à explorer, à expérimenter et à apprendre pour perfectionner l'application
+                de
+                SCRUM dans différents contextes. En intégrant SCRUM dans votre boîte à outils de gestion de projet, vous
+                serez
+                en mesure de relever les défis actuels et de créer des produits innovants qui répondent aux besoins
+                changeants
+                du marché.</p>
+            <div class="exos">
+
+                <p><b>Merci d'avoir suivi ce cours sur SCRUM. J'espère qu'il vous a été utile dans votre compréhension
+                        de
+                        cette
+                        méthodologie agile. Si vous avez des questions supplémentaires, n'hésitez pas à les poser. Bonne
+                        continuation
+                        dans vos projets SCRUM !</b></p>
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <footer>
+        <p class="footer text-center">&copy; Julien Lebron. Tous droits réservés. <a href="#introduction"><i class="fa-solid fa-arrow-up fa-bounce"></i></a></p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
